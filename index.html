@@ -61,16 +61,7 @@
             <button onclick="kite ()">submit</button>
             <h3 id ="kite_answer" style=color:green></h3>
             <br><br>
-        <h1 id="para1">volume of cube</h1>
-            <h3>high</h3>
-            <input type="text" id="volumeofcube_1" name="volumeofcube_1"><br><br>
-            <h3>length</h3>
-            <input type="text" id="volumeofcube_2" name="volumeofcube_2"><br><br>
-            <h3>wide</h3>
-            <input type="text" id="volumeofcube_3" name="volumeofcube_3"><br><br>
-            <button onclick="cube ()">submit</button>
-            <h3 id ="cube_answer" style=color:green></h3>
-            <br><br>
+        
             
         <script>
 
@@ -151,18 +142,7 @@
                 kite_answer=(1/2)*(diagonal_1*diagonal_2)
                 document.getElementById("kite_answer").innerHTML = "kite_answer:" + kite_answer;
             }
-        function cube () {
-            let cube_answer=0
-            let cube_high=document.getElementById("volumeofcube_1").value
-            let cube_length=document.getElementById("volumeofcube_2").value
-            let cube_wide=document.getElementById("volumeofcube_3").value
-            if (cube_high==""||cube_base==""||cube_wide==""){
-                alert(error)
-            }
-            else {
-                cube_answer=(cube_high*cube_length)*cube_wide
-                document.getElementById("cube_answer").innerHTML = "cube_answer:" + cube_answer;
-            }
+        
 
         }
         
